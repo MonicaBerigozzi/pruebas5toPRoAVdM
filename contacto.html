@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="images\Logo.png">
+	<title>Portfolio Profesional Mónica Berigozzi</title>
+	<script
+            src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+            $(function(){
+                $("#contenidoHeader").load("header.html");
+            });
+            $(function(){
+                $("#contenidoFooter").load("footer.html");
+            });
+    </script>
+</head>
+<body>
+	<header>
+		<div id="contenidoHeader"></div>
+	</header>
+	<main>
+		<h1>Contacto:</h1>
+		<div>
+			<form method="POST" action="https://formsubmit.co/mfberigozzi@escuelasproa.edu.ar">
+				<div><label>Nombre: <input type="text" name="nombre" required minlength="10" placeholder="John Doe"> </label> </div>
+				<div><label>mail: <input type="email" name="mail" required minlength="12" placeholder="johndoe@mail.com"> </label> </div>
+				<div><label>Asunto: <input type="text" name="asunto" required minlength="10" placeholder="Un asunto"> </label> </div>
+				<div><label>Mensaje: <textarea name="mensaje" required rows="12" cols="24" minlength="30" placeholder="Escriba su mensaje aquí"></textarea> </label> </div>
+				<div><input type="submit" name="enviar" value="Enviar"> <input type="reset" name="borrar" value="Borrar"> </div>
+				<input type="hidden" name="_next" value="contacto.html">
+				<input type="hidden" name="_subject" value="Contacto Portfolio">
+				<input type="hidden" name="_captcha" value="false">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<div id="contenidoFooter"></div>
+	</footer>
+</body>
+</html>
