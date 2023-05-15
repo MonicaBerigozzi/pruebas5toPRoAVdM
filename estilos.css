@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway:wght@500&display=swap');
+
+*, *::before, *::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Inter', sans-serif;
+	font-size: 62.5%;
+	color: #111111;
+}
+
+header{
+	font-family: 'Raleway', sans-serif;
+	background: black;
+	color: white;
+}
+
+header a{
+	color: white;
+}
+
+footer{
+	font-family: 'Raleway', sans-serif;
+	background: black;
+	color: white;
+}
+footer a{
+	color: white;
+}
+
+.sobreFoto{
+	color: white;
+}
+.items{
+	
+}
+
+a {
+	text-decoration: none;
+	font-size: 2em;
+	font-family: inherit;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+p{
+	font-size: 1.8em;
+}
+
+.contenedor {
+	max-width: 1200px;
+	margin: 0 auto;
+}
